@@ -11,7 +11,7 @@ import {
 import { store } from "./store.js";
 import { Provider } from "react-redux";
 import { configureChains, createClient, WagmiConfig } from "wagmi";
-import { sepolia } from '@wagmi/core/chains';
+import { mainnet } from '@wagmi/core/chains';
 import { publicProvider } from "wagmi/providers/public";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
@@ -19,7 +19,7 @@ import { connectorsForWallets } from "@rainbow-me/rainbowkit";
 import { metaMaskWallet } from "@rainbow-me/rainbowkit/wallets";
 // import { createConfig } from 'wagmi';
 const { chains, provider, webSocketProvider } = configureChains(
-  [sepolia],
+  [mainnet],
   [
     alchemyProvider({ apiKey: process.env.REACT_APP_ALCHEMY_API }),
     publicProvider(),

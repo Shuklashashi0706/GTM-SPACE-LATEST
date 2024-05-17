@@ -58,7 +58,7 @@ const LeaderBoard = () => {
               {eligiblePartners.map((partner) => (
                 <button
                   key={partner.partnerName}
-                  className={`flex justify-center items-center gap-2 mb-5 ${
+                  className={`flex justify-center items-center gap-2 mb-5 w-fit px-3 ${
                     partner.partnerName === selectedPartner
                       ? "gtm-btn"
                       : "gtm-btn-active"

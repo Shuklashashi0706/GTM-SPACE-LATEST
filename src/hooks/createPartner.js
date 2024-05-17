@@ -2,7 +2,7 @@ export function createPartners() {
   const contractAddresses =
     process.env.REACT_APP_CONTRACT_ADDRESS_ARRAY.split(",");
   const reqTokens = process.env.REACT_APP_REQUIRED_TOKENS_ARRAY.split(",");
-  const partnerLogos = process.env.REACT_APP_PARTNER_LOGOS.split(",");
+  const partnerLogos = process.env.REACT_APP_PARTNER_IMG.split(",");
   const partnerNames = process.env.REACT_APP_PARTNER_NAMES.split(",");
   const rpcUrl = process.env.REACT_APP_RPC_URL.split(",");
   const partners = [];
